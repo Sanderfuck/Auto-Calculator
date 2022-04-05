@@ -1,11 +1,17 @@
 package com.sander.autocalculator.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.*;
+import java.util.Set;
+
+@Data
+@Getter
+@Setter
 @Entity
+@Table(name = "user")
 public class User {
 
     @Id
@@ -16,6 +22,15 @@ public class User {
     private String phoneNumber;
     private String password;
 
+    @Transient
+    private String confirmPassword;
+
+    @OneToMany(mappedBy = "user")
+    private Set<CalculationData> calculationDataSet;
+
+    @ManyToMany
+    private Set<Role> roles;
+
     public User() {
     }
 
@@ -25,35 +40,4 @@ public class User {
         this.password = password;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

@@ -6,10 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.2</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/><!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sander</groupId>
 	<artifactId>autocalculator</artifactId>
+	<packaging>jar</packaging>
+
 	<version>0.0.1-SNAPSHOT</version>
 	<name>autocalculator</name>
 	<description>Demo project for Spring Boot</description>
@@ -73,8 +75,14 @@
 			<version>1.18.22</version>
 			<scope>provided</scope>
 		</dependency>
+<!--        <dependency>-->
+<!--            <groupId>junit</groupId>-->
+<!--            <artifactId>junit</artifactId>-->
+<!--            <version>4.11</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
-	</dependencies>
+    </dependencies>
 
 	<build>
 		<plugins>

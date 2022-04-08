@@ -64,7 +64,7 @@ public class CalculateServiceImpl implements CalculateService {
                 + calculationData.getPortName().getPortPrice();
     }
 
-    private static double calculateInvoice(double lotPrice) {
+    public double calculateInvoice(double lotPrice) {
         double auctionCommission;
         if (lotPrice <= 1500) {
             auctionCommission = 400.0;

@@ -1,4 +1,3 @@
-![photo5357194179991680276](https://user-images.githubusercontent.com/63095184/174249196-7e20e2f3-c104-4b80-99e1-10f3daf2ba9c.jpg)
 # Auto-Calculator
 Auto Calculate Cars from USA
 This is an application for calculating the value of a car that is auctioned in the United States.
@@ -9,4 +8,10 @@ Calculation of the final value includes:
 - delivery and others.
 
 All entered data and the result of calculations are stored in the database
+
+![Autocalculator_Start](https://user-images.githubusercontent.com/63095184/174250602-f6f72327-3da8-453c-beef-3d8e6dfef8cd.png)
+
+
+![Autocalculator_calculate](https://user-images.githubusercontent.com/63095184/174250599-e13ba1b3-23b5-4490-91bd-a6a533b01b67.png)
+
 
